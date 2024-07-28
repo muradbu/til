@@ -14,6 +14,8 @@
       - [XFS](#xfs)
   - [Installing](#installing)
     - [Configuring `/etc/mdadm.conf`](#configuring-etcmdadmconf)
+  - [Common errors \& warnings](#common-errors--warnings)
+    - [trace: warning: mdadm: Neither MAILADDR nor PROGRAM has been set. This will cause the `mdmon` service to crash.](#trace-warning-mdadm-neither-mailaddr-nor-program-has-been-set-this-will-cause-the-mdmon-service-to-crash)
 
 ## Introduction
 
@@ -136,3 +138,9 @@ Edit `/mnt/etc/nixos/hardware-configuration.nix` and add the option [`boot.swrai
 ```
 
 Now you can `nixos-install`.
+
+## Common errors & warnings
+
+### trace: warning: mdadm: Neither MAILADDR nor PROGRAM has been set. This will cause the `mdmon` service to crash.
+
+See this issue: https://github.com/nix-community/disko/issues/451#issuecomment-1824049815
